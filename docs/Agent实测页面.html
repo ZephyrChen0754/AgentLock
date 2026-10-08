@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgentLock 桌面实测</title>
+<style>
+  *{box-sizing:border-box}body{margin:0;background:#f4f7fa;color:#162a3a;font:18px "Microsoft YaHei UI",sans-serif}
+  main{max-width:850px;margin:40px auto;padding:32px;background:white;border-radius:18px;border:1px solid #dce5ea}
+  h1{margin-top:0}p{line-height:1.7;color:#506370}.clock{font:36px ui-monospace,Consolas,monospace;background:#eef7f6;padding:24px;border-radius:12px;color:#00746f}
+  .row{display:flex;gap:18px;align-items:center;margin:28px 0}button{font:inherit;padding:14px 24px;border:0;border-radius:10px;background:#00746f;color:white;cursor:pointer}
+  output{font-size:30px;font-weight:700}label{display:block;margin-bottom:12px}input{width:100%;font:inherit;padding:16px;border:2px solid #cbd9df;border-radius:10px}
+  #textResult{min-height:34px;color:#00746f}.note{font-size:15px}.step{padding:16px 0;border-top:1px solid #e1e9ed}
+</style>
+<main>
+  <h1>AgentLock 桌面实测</h1>
+  <p>让你日常使用的 Agent 在保护期间查看这个时钟、点击计数按钮，并在输入框中填写测试文字。</p>
+  <div id="clock" class="clock" aria-label="持续更新的时钟"></div>
+  <div class="row"><button id="increment" type="button">点击计数 +1</button><span>当前计数</span><output id="count">0</output></div>
+  <label for="agentText">让 Agent 输入：AgentLock 测试通过</label>
+  <input id="agentText" autocomplete="off" placeholder="等待 Agent 输入测试文字">
+  <p id="textResult" aria-live="polite">等待输入。</p>
+  <div class="step"><strong>怎样判断</strong><p>两次截图中的时钟应变化，计数应变成 3，输入框应准确显示测试文字。再由你现场确认：实体键鼠受限，密码能正常解锁。</p></div>
+  <p class="note">此页面离线运行，不上传数据。页面上的计数和文字只证明发生了交互；实际操作者、物理屏幕遮罩及实体输入效果需要现场确认。</p>
+</main>
+<script>
+  let clicks = 0;
+  const clock = document.getElementById('clock');
+  const count = document.getElementById('count');
+  const field = document.getElementById('agentText');
+  const textResult = document.getElementById('textResult');
+  const updateClock = () => { const now = new Date(); clock.textContent = now.toLocaleTimeString('zh-CN', {hour12:false}) + '.' + String(now.getMilliseconds()).padStart(3,'0'); };
+  updateClock(); setInterval(updateClock, 200);
+  document.getElementById('increment').addEventListener('click', () => { count.value = String(++clicks); count.textContent = String(clicks); });
+  field.addEventListener('input', () => { textResult.textContent = field.value === 'AgentLock 测试通过' ? '测试文字匹配。' : '测试文字尚未匹配。'; });
+</script>
+</html>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>AgentLock</AssemblyName>
+    <RootNamespace>AgentLock</RootNamespace>
+    <Version>0.1.5</Version>
+    <ApplicationIcon>../../assets/brand/agentlock.ico</ApplicationIcon>
+    <Product>AgentLock</Product>
+    <Description>同桌面 Agent 守护工具</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../assets/brand/agentlock.ico" LogicalName="AgentLock.Brand.ico" />
+  </ItemGroup>
+</Project>

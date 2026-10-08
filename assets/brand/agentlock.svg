@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AgentLock</title>
+  <desc id="desc">A white protective arch above a mint forward cue on a rounded teal tile.</desc>
+  <rect width="512" height="512" rx="112" fill="#173C36"/>
+  <path d="M128 376 198 190C210 152 232 130 256 130S302 152 314 190L384 376" fill="none" stroke="#FFFFFF" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M236 238 320 288 236 338Z" fill="#67D8B4"/>
+</svg>

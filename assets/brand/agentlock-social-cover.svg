@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">AgentLock — 人离开，Agent 接着工作</title>
+  <desc id="desc">Windows 同桌面守护。F12 密码解锁 · 本机运行 · 无需虚拟机。</desc>
+  <rect id="canvas" width="1200" height="630" fill="#F5F8F7"/>
+  <g id="editable-copy" fill="#173C36">
+    <text id="brand" x="72" y="109" font-family="Segoe UI Semibold,Segoe UI,Arial,sans-serif" font-size="32" font-weight="600">AgentLock</text>
+    <rect id="brand-rule" x="74" y="151" width="48" height="5" rx="2.5" fill="#087F75"/>
+    <g id="headline" font-family="Microsoft YaHei UI,Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="62" font-weight="700">
+      <text x="72" y="246">人离开，</text>
+      <text x="72" y="329">Agent 接着工作</text>
+    </g>
+    <text id="subtitle" x="74" y="411" font-family="Microsoft YaHei UI,Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#61736D">Windows 同桌面守护</text>
+    <path id="copy-rule" d="M74 490H704" stroke="#DEE8E2" stroke-width="1"/>
+    <text id="details" x="74" y="548" font-family="Microsoft YaHei UI,Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#61736D">F12 密码解锁 · 本机运行 · 无需虚拟机</text>
+  </g>
+  <g id="brand-symbol" transform="translate(832 184) scale(.5625)">
+    <rect width="512" height="512" rx="112" fill="#173C36"/>
+    <path d="M128 376 198 190C210 152 232 130 256 130S302 152 314 190L384 376" fill="none" stroke="#FFFFFF" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M236 238 320 288 236 338Z" fill="#67D8B4"/>
+  </g>
+  <rect id="footer-edge" x="0" y="615" width="1200" height="15" fill="#E2F4EE"/>
+</svg>
