@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/brand/agentlock-wordmark-light.svg" alt="AgentLock" width="300">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/brand/agentlock-wordmark-dark.svg">
+    <img src="assets/brand/agentlock-wordmark-light.svg" alt="AgentLock" width="300">
+  </picture>
   <br>
   <b>人离开，Agent 接着工作</b>
 </p>
